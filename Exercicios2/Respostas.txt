@@ -1,0 +1,41 @@
+1 - Principais relacionamentos são:
+	Associação, agregação, Composição e Herança
+	
+2 - AS (tem um) e IS (é um)
+
+3 - Herança (é um), estente atributos e metodos, obtem similaridade (generalização) e identifica atributos e metodos não correspondentes (especialização)
+
+4 - Baixo nível de acomplamento, facil de manter e testar.
+
+5 - 
+
+6 - Interfaces:
+	- Contém somente a assinatura dos métodos sem implementação;
+	- Todos os membros são públicos; 
+	- Não pode ser instanciada;
+	- Uma classe pode implementar mais de uma interface;
+	- Não pode conter um construtor; 
+	- Quando uma classe herda de uma interface ela tem que implementar todos os métodos da interface
+	
+	Abstratas
+	- É uma classe não pode ser instanciada
+	- Pode ser herdada e geralmente serve como classe base para outras classes.
+	- Pode conter métodos abstratos e métodos comuns. 
+	- Pode possuir construtores, propriedades, indexadores e eventos.
+	- Não pode ser estática (static). Uma classe abstrata não pode ser selada (sealed).
+	- Pode herdar de outra classe abstrata.
+	
+7 - Acoplamento entre classes são o relacionamento entre elas, que podem ser de alto nível e baixo nível.
+Exemplo, uma super classe chamada Animal que tem os atributo Idade e com um método Andar() e outras classes derividas que herdam de 
+Animal teram o mesmo atributo, porém, se tivermos uma classe peixe que não Anda, teremos então um problema de manutenção.
+
+8 - Polimorfismo tem uma caracteristica de poder sobreescrever metodos e construtor, modificando o resultado.
+
+9 b) Foi executado os metodos Conectar e Executa e mostrou na tela as seguintes mensagens:
+	Conectar banco de dados
+	Processando Transação...
+  
+  c) Criaria um Interface com a assinatura e implementaria na classe Transação, porém, não é a melhor pratica já teriamos um alto nível de
+  acoplamento. Eu refatoraria todo o código utilizando composição ou somente interface assim a manutenção do código será mais facil de realizar.
+  C# não permite herdar de duas classes concreta
+
